@@ -1,0 +1,127 @@
+"C:\Users\Kirollos Nagi\anaconda3\envs\tensorflow\python.exe" "C:/Users/Kirollos Nagi/PycharmProjects/tftest/ass2/train.py"
+x_train shape: {(26752, 4, 4, 2048)}
+y_train shape: {(26752, 257)}
+x_test shape: {(3855, 4, 4, 2048)}
+y_test shape: {(3855, 257)}
+2021-10-12 00:22:48.411784: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-10-12 00:22:48.867104: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 134217728 exceeds 10% of free system memory.
+2021-10-12 00:22:49.036591: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 134217728 exceeds 10% of free system memory.
+2021-10-12 00:22:49.119640: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 134217728 exceeds 10% of free system memory.
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+flatten (Flatten)            (None, 32768)             0         
+_________________________________________________________________
+dense (Dense)                (None, 1024)              33555456  
+_________________________________________________________________
+dropout (Dropout)            (None, 1024)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 512)               524800    
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 512)               0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 257)               131841    
+=================================================================
+Total params: 34,212,097
+Trainable params: 34,212,097
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/40
+2021-10-12 00:22:50.502176: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 134217728 exceeds 10% of free system memory.
+2021-10-12 00:22:50.551140: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 134217728 exceeds 10% of free system memory.
+53/53 - 108s - loss: 4.8742 - accuracy: 0.1647 - top_k_categorical_accuracy: 0.2498
+Epoch 2/40
+53/53 - 59s - loss: 3.4887 - accuracy: 0.3260 - top_k_categorical_accuracy: 0.4925
+Epoch 3/40
+53/53 - 53s - loss: 2.9494 - accuracy: 0.3985 - top_k_categorical_accuracy: 0.6002
+Epoch 4/40
+53/53 - 53s - loss: 2.6501 - accuracy: 0.4440 - top_k_categorical_accuracy: 0.6523
+Epoch 5/40
+53/53 - 56s - loss: 2.4199 - accuracy: 0.4783 - top_k_categorical_accuracy: 0.6912
+Epoch 6/40
+53/53 - 51s - loss: 2.2277 - accuracy: 0.5113 - top_k_categorical_accuracy: 0.7234
+Epoch 7/40
+53/53 - 57s - loss: 2.1023 - accuracy: 0.5344 - top_k_categorical_accuracy: 0.7491
+Epoch 8/40
+53/53 - 50s - loss: 1.9740 - accuracy: 0.5536 - top_k_categorical_accuracy: 0.7621
+Epoch 9/40
+53/53 - 48s - loss: 1.8659 - accuracy: 0.5729 - top_k_categorical_accuracy: 0.7801
+Epoch 10/40
+53/53 - 47s - loss: 1.8010 - accuracy: 0.5855 - top_k_categorical_accuracy: 0.7915
+Epoch 11/40
+53/53 - 45s - loss: 1.6971 - accuracy: 0.6049 - top_k_categorical_accuracy: 0.8075
+Epoch 12/40
+53/53 - 47s - loss: 1.6146 - accuracy: 0.6167 - top_k_categorical_accuracy: 0.8193
+Epoch 13/40
+53/53 - 47s - loss: 1.5672 - accuracy: 0.6296 - top_k_categorical_accuracy: 0.8276
+Epoch 14/40
+53/53 - 48s - loss: 1.5124 - accuracy: 0.6375 - top_k_categorical_accuracy: 0.8328
+Epoch 15/40
+53/53 - 51s - loss: 1.4629 - accuracy: 0.6479 - top_k_categorical_accuracy: 0.8424
+Epoch 16/40
+53/53 - 49s - loss: 1.4173 - accuracy: 0.6591 - top_k_categorical_accuracy: 0.8481
+Epoch 17/40
+53/53 - 48s - loss: 1.3640 - accuracy: 0.6649 - top_k_categorical_accuracy: 0.8577
+Epoch 18/40
+53/53 - 49s - loss: 1.3362 - accuracy: 0.6728 - top_k_categorical_accuracy: 0.8596
+Epoch 19/40
+53/53 - 47s - loss: 1.3260 - accuracy: 0.6780 - top_k_categorical_accuracy: 0.8625
+Epoch 20/40
+53/53 - 45s - loss: 1.3044 - accuracy: 0.6808 - top_k_categorical_accuracy: 0.8632
+Epoch 21/40
+53/53 - 46s - loss: 1.2726 - accuracy: 0.6845 - top_k_categorical_accuracy: 0.8717
+Epoch 22/40
+53/53 - 49s - loss: 1.2187 - accuracy: 0.6968 - top_k_categorical_accuracy: 0.8766
+Epoch 23/40
+53/53 - 46s - loss: 1.2156 - accuracy: 0.6967 - top_k_categorical_accuracy: 0.8789
+Epoch 24/40
+53/53 - 44s - loss: 1.1843 - accuracy: 0.7055 - top_k_categorical_accuracy: 0.8821
+Epoch 25/40
+53/53 - 46s - loss: 1.1383 - accuracy: 0.7152 - top_k_categorical_accuracy: 0.8878
+Epoch 26/40
+53/53 - 44s - loss: 1.1371 - accuracy: 0.7120 - top_k_categorical_accuracy: 0.8877
+Epoch 27/40
+53/53 - 48s - loss: 1.1240 - accuracy: 0.7183 - top_k_categorical_accuracy: 0.8887
+Epoch 28/40
+53/53 - 44s - loss: 1.0920 - accuracy: 0.7253 - top_k_categorical_accuracy: 0.8943
+Epoch 29/40
+53/53 - 45s - loss: 1.0772 - accuracy: 0.7253 - top_k_categorical_accuracy: 0.8992
+Epoch 30/40
+53/53 - 43s - loss: 1.0667 - accuracy: 0.7315 - top_k_categorical_accuracy: 0.8987
+Epoch 31/40
+53/53 - 46s - loss: 1.0343 - accuracy: 0.7376 - top_k_categorical_accuracy: 0.9047
+Epoch 32/40
+53/53 - 44s - loss: 1.0337 - accuracy: 0.7349 - top_k_categorical_accuracy: 0.9037
+Epoch 33/40
+53/53 - 45s - loss: 1.0199 - accuracy: 0.7407 - top_k_categorical_accuracy: 0.9035
+Epoch 34/40
+53/53 - 46s - loss: 0.9882 - accuracy: 0.7485 - top_k_categorical_accuracy: 0.9099
+Epoch 35/40
+53/53 - 43s - loss: 0.9901 - accuracy: 0.7487 - top_k_categorical_accuracy: 0.9089
+Epoch 36/40
+53/53 - 44s - loss: 0.9652 - accuracy: 0.7540 - top_k_categorical_accuracy: 0.9113
+Epoch 37/40
+53/53 - 46s - loss: 0.9464 - accuracy: 0.7561 - top_k_categorical_accuracy: 0.9149
+Epoch 38/40
+53/53 - 43s - loss: 0.9240 - accuracy: 0.7620 - top_k_categorical_accuracy: 0.9197
+Epoch 39/40
+53/53 - 43s - loss: 0.9427 - accuracy: 0.7606 - top_k_categorical_accuracy: 0.9142
+Epoch 40/40
+53/53 - 45s - loss: 0.9276 - accuracy: 0.7610 - top_k_categorical_accuracy: 0.9179
+test score 1.823384404182434
+test accuracy 0.6360570788383484
+top1 acc: 0.6360570687418936
+top5 acc: 0.8077821011673152
+
+Process finished with exit code 0
+#training parameters
+image target size 128,128,3
+512 batch size
+40 epochs
+1024
+0.5
+512
+0.5
+257

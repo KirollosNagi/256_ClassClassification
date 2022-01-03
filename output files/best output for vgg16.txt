@@ -1,0 +1,120 @@
+"C:\Users\Kirollos Nagi\anaconda3\envs\tensorflow\python.exe" "C:/Users/Kirollos Nagi/PycharmProjects/tftest/ass2/train.py"
+x_train shape: {(26752, 2, 2, 512)}
+y_train shape: {(26752, 257)}
+x_test shape: {(3855, 2, 2, 512)}
+y_test shape: {(3855, 257)}
+2021-10-11 23:23:39.216884: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+flatten (Flatten)            (None, 2048)              0         
+_________________________________________________________________
+dense (Dense)                (None, 1024)              2098176   
+_________________________________________________________________
+dropout (Dropout)            (None, 1024)              0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 512)               524800    
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 512)               0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 257)               131841    
+=================================================================
+Total params: 2,754,817
+Trainable params: 2,754,817
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/40
+53/53 - 4s - loss: 9.1441 - accuracy: 0.0409 - top_k_categorical_accuracy: 0.0843
+Epoch 2/40
+53/53 - 3s - loss: 5.2388 - accuracy: 0.0869 - top_k_categorical_accuracy: 0.1337
+Epoch 3/40
+53/53 - 4s - loss: 5.1167 - accuracy: 0.1040 - top_k_categorical_accuracy: 0.1622
+Epoch 4/40
+53/53 - 3s - loss: 4.9626 - accuracy: 0.1241 - top_k_categorical_accuracy: 0.1943
+Epoch 5/40
+53/53 - 4s - loss: 4.7929 - accuracy: 0.1401 - top_k_categorical_accuracy: 0.2232
+Epoch 6/40
+53/53 - 4s - loss: 4.5711 - accuracy: 0.1604 - top_k_categorical_accuracy: 0.2642
+Epoch 7/40
+53/53 - 4s - loss: 4.3316 - accuracy: 0.1842 - top_k_categorical_accuracy: 0.3074
+Epoch 8/40
+53/53 - 4s - loss: 4.0948 - accuracy: 0.2051 - top_k_categorical_accuracy: 0.3512
+Epoch 9/40
+53/53 - 4s - loss: 3.8653 - accuracy: 0.2316 - top_k_categorical_accuracy: 0.3913
+Epoch 10/40
+53/53 - 4s - loss: 3.6675 - accuracy: 0.2543 - top_k_categorical_accuracy: 0.4260
+Epoch 11/40
+53/53 - 4s - loss: 3.4957 - accuracy: 0.2775 - top_k_categorical_accuracy: 0.4668
+Epoch 12/40
+53/53 - 4s - loss: 3.3543 - accuracy: 0.2977 - top_k_categorical_accuracy: 0.4920
+Epoch 13/40
+53/53 - 4s - loss: 3.2147 - accuracy: 0.3185 - top_k_categorical_accuracy: 0.5174
+Epoch 14/40
+53/53 - 4s - loss: 3.0818 - accuracy: 0.3378 - top_k_categorical_accuracy: 0.5445
+Epoch 15/40
+53/53 - 4s - loss: 2.9577 - accuracy: 0.3586 - top_k_categorical_accuracy: 0.5693
+Epoch 16/40
+53/53 - 4s - loss: 2.8758 - accuracy: 0.3704 - top_k_categorical_accuracy: 0.5849
+Epoch 17/40
+53/53 - 4s - loss: 2.7502 - accuracy: 0.3888 - top_k_categorical_accuracy: 0.6085
+Epoch 18/40
+53/53 - 4s - loss: 2.6684 - accuracy: 0.4049 - top_k_categorical_accuracy: 0.6260
+Epoch 19/40
+53/53 - 4s - loss: 2.5827 - accuracy: 0.4191 - top_k_categorical_accuracy: 0.6448
+Epoch 20/40
+53/53 - 4s - loss: 2.5177 - accuracy: 0.4304 - top_k_categorical_accuracy: 0.6543
+Epoch 21/40
+53/53 - 4s - loss: 2.4100 - accuracy: 0.4492 - top_k_categorical_accuracy: 0.6731
+Epoch 22/40
+53/53 - 4s - loss: 2.3692 - accuracy: 0.4589 - top_k_categorical_accuracy: 0.6826
+Epoch 23/40
+53/53 - 4s - loss: 2.2833 - accuracy: 0.4727 - top_k_categorical_accuracy: 0.6968
+Epoch 24/40
+53/53 - 4s - loss: 2.2078 - accuracy: 0.4853 - top_k_categorical_accuracy: 0.7121
+Epoch 25/40
+53/53 - 4s - loss: 2.1476 - accuracy: 0.4973 - top_k_categorical_accuracy: 0.7278
+Epoch 26/40
+53/53 - 4s - loss: 2.1081 - accuracy: 0.5036 - top_k_categorical_accuracy: 0.7334
+Epoch 27/40
+53/53 - 4s - loss: 2.0329 - accuracy: 0.5173 - top_k_categorical_accuracy: 0.7410
+Epoch 28/40
+53/53 - 4s - loss: 1.9755 - accuracy: 0.5314 - top_k_categorical_accuracy: 0.7577
+Epoch 29/40
+53/53 - 4s - loss: 1.9507 - accuracy: 0.5372 - top_k_categorical_accuracy: 0.7640
+Epoch 30/40
+53/53 - 4s - loss: 1.8977 - accuracy: 0.5440 - top_k_categorical_accuracy: 0.7708
+Epoch 31/40
+53/53 - 4s - loss: 1.8793 - accuracy: 0.5545 - top_k_categorical_accuracy: 0.7748
+Epoch 32/40
+53/53 - 4s - loss: 1.8041 - accuracy: 0.5683 - top_k_categorical_accuracy: 0.7864
+Epoch 33/40
+53/53 - 4s - loss: 1.7651 - accuracy: 0.5715 - top_k_categorical_accuracy: 0.7920
+Epoch 34/40
+53/53 - 4s - loss: 1.7180 - accuracy: 0.5802 - top_k_categorical_accuracy: 0.7993
+Epoch 35/40
+53/53 - 4s - loss: 1.6913 - accuracy: 0.5913 - top_k_categorical_accuracy: 0.8100
+Epoch 36/40
+53/53 - 4s - loss: 1.6814 - accuracy: 0.5961 - top_k_categorical_accuracy: 0.8067
+Epoch 37/40
+53/53 - 4s - loss: 1.6263 - accuracy: 0.6013 - top_k_categorical_accuracy: 0.8178
+Epoch 38/40
+53/53 - 4s - loss: 1.6038 - accuracy: 0.6099 - top_k_categorical_accuracy: 0.8212
+Epoch 39/40
+53/53 - 4s - loss: 1.5677 - accuracy: 0.6170 - top_k_categorical_accuracy: 0.8292
+Epoch 40/40
+53/53 - 4s - loss: 1.5446 - accuracy: 0.6226 - top_k_categorical_accuracy: 0.8343
+test score 2.8642539978027344
+test accuracy 0.42256808280944824
+top1 acc: 0.422568093385214
+top5 acc: 0.6368352788586251
+
+Process finished with exit code 0
+batch size 512
+40 epochs
+1024
+0.5
+512
+0.5
+257
